@@ -50,7 +50,6 @@ export const HeaderContainer = styled.div`
 `
 
 
-
 function Header() {
 
    const [isOpen, setIsOpen] = useState(false);
