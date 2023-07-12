@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "../src/components/Header";
-import Footer from "../src/components/Footer"
-import Main from "../src/pages/Main";
+import Header from "./components/Header";
+import Footer from "./components/Footer"
+import Main from "./pages/Main";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -18,8 +18,8 @@ function App() {
     axios
       .get('http://cozshopping.codestates-seb.link/api/v1/products')
       .then(response => {
-        console.log(response.data); // 받은 데이터 확인
-        setProducts(response.data); // 받은 데이터로 products 상태 업데이트
+        console.log(response.data); 
+        setProducts(response.data); 
       })
       .catch(error => {
         console.log("에러:", error);
